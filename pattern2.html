@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+function ch()
+{
+//alert("hii");
+var pm=/^[0-9+]{13}$/;
+var mob=document.getElementById("tb").value;
+if(!pm.test(mob))
+{
+alert("mobile no is invalid");
+}
+else
+{
+alert("mobile no is valid");
+}
+}
+</script>
+</head>
+<body>
+Mobile
+<input type="text" id="tb"/>
+<br/>
+<input type="button" value="Check" onclick="ch()"/>
+</body>
+</html>

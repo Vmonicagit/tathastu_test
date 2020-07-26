@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+//Required validation
+function val()
+{
+//alert("hiii");
+var name=document.getElementById("tb").value;
+if(name=="")
+{
+document.getElementById("tb").style.border="2px solid red";
+document.getElementById("sp").innerHTML="Name is Empty";
+}
+else
+{
+document.getElementById("tb").style.border="";
+document.getElementById("sp").innerHTML="";
+}
+}
+</script>
+</head>
+<body>
+Enter your Name
+<input type="text" id="tb"/>
+<span id="sp" style="color:red;"></span>
+<br/>
+<input type="button" value="Check" onclick="val()"/>
+
+</body>
+</html>
+
+
+

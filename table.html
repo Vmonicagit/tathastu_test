@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function loop() {
+  var i = 1;
+  var x = document.getElementById("num").value;
+
+  //document.getElementById("result").value = result;
+
+  while (i <= 10) {
+
+    var result = document.getElementById("result");
+    var sum = document.createTextNode(x + " x " + i + " = " + i * x + "\n");
+
+    result.appendChild(sum);
+    i++;
+  }
+}
+</script>
+</head>
+<body>
+<h1>Table from While loop: </h1>
+
+  <script src="while_1loop.js">
+  </script><br/> Enter a number <input type="number"id="num" /><br>
+  <button type="button" onclick="loop()">Start</button><br>
+  <br/>
+  <textarea rows="12" cols="15" id="result" readonly>
+       
+</textarea><br/>
+</body>
+</html>

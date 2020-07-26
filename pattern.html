@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+//Pattern Validation
+function ch()
+{
+//alert("hiii");
+var pn=/^[A-Za-z ]{3,6}$/;
+var name=document.getElementById("tb").value;
+if(!pn.test(name))
+{
+alert("Name is invalid");
+}
+else
+{
+alert("Name is valid");
+}
+}
+</script>
+</head>
+<body>
+Name
+<input type="text" id="tb"/>
+<br/>
+<input type="button" value="Check" onclick="ch()"/>
+</body>
+</html>
+
+
+
